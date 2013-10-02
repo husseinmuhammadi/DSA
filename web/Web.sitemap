@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Default.aspx" title="Web Conference"  description="">
+		<siteMapNode url="~/PaperSubmission.aspx" title="Submission a conference"  description="" />
+		<siteMapNode url="~/ImportantDate.aspx" title="Important Date"  description="" />
+		<siteMapNode url="~/Program.aspx" title="Program"  description="" />
+		<siteMapNode url="~/Registration.aspx" title="Registration"  description="" />
+		<siteMapNode url="~/Accomodation.aspx" title="Accomodation"  description="" />
+		<siteMapNode url="~/ContactUs.aspx" title="Contact Us"  description="" />
+	</siteMapNode>
+</siteMap>

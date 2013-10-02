@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SystemDataSet" targetNamespace="http://tempuri.org/SystemDataSet.xsd" xmlns:mstns="http://tempuri.org/SystemDataSet.xsd" xmlns="http://tempuri.org/SystemDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ApplicationServices" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApplicationServices (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ApplicationServices.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SystemLanguagesTableAdapter" GeneratorDataComponentClassName="SystemLanguagesTableAdapter" Name="SystemLanguages" UserDataComponentName="SystemLanguagesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ApplicationServices (Web.config)" DbObjectName="Conference.sys.syslanguages" DbObjectType="View" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        langid, dateformat, datefirst, upgrade, name, alias, months, shortmonths, days, lcid, msglangid
+FROM            sys.syslanguages</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="langid" DataSetColumn="langid" />
+              <Mapping SourceColumn="dateformat" DataSetColumn="dateformat" />
+              <Mapping SourceColumn="datefirst" DataSetColumn="datefirst" />
+              <Mapping SourceColumn="upgrade" DataSetColumn="upgrade" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="alias" DataSetColumn="alias" />
+              <Mapping SourceColumn="months" DataSetColumn="months" />
+              <Mapping SourceColumn="shortmonths" DataSetColumn="shortmonths" />
+              <Mapping SourceColumn="days" DataSetColumn="days" />
+              <Mapping SourceColumn="lcid" DataSetColumn="lcid" />
+              <Mapping SourceColumn="msglangid" DataSetColumn="msglangid" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SystemDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SystemDataSet" msprop:Generator_UserDSName="SystemDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SystemLanguages" msprop:Generator_TableClassName="SystemLanguagesDataTable" msprop:Generator_TableVarName="tableSystemLanguages" msprop:Generator_TablePropName="SystemLanguages" msprop:Generator_RowDeletingName="SystemLanguagesRowDeleting" msprop:Generator_UserTableName="SystemLanguages" msprop:Generator_RowChangingName="SystemLanguagesRowChanging" msprop:Generator_RowEvHandlerName="SystemLanguagesRowChangeEventHandler" msprop:Generator_RowDeletedName="SystemLanguagesRowDeleted" msprop:Generator_RowEvArgName="SystemLanguagesRowChangeEvent" msprop:Generator_RowChangedName="SystemLanguagesRowChanged" msprop:Generator_RowClassName="SystemLanguagesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="langid" msprop:Generator_ColumnVarNameInTable="columnlangid" msprop:Generator_ColumnPropNameInRow="langid" msprop:Generator_ColumnPropNameInTable="langidColumn" msprop:Generator_UserColumnName="langid" type="xs:short" />
+              <xs:element name="dateformat" msprop:Generator_ColumnVarNameInTable="columndateformat" msprop:Generator_ColumnPropNameInRow="dateformat" msprop:Generator_ColumnPropNameInTable="dateformatColumn" msprop:Generator_UserColumnName="dateformat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datefirst" msprop:Generator_ColumnVarNameInTable="columndatefirst" msprop:Generator_ColumnPropNameInRow="datefirst" msprop:Generator_ColumnPropNameInTable="datefirstColumn" msprop:Generator_UserColumnName="datefirst" type="xs:unsignedByte" />
+              <xs:element name="upgrade" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnupgrade" msprop:Generator_ColumnPropNameInRow="upgrade" msprop:Generator_ColumnPropNameInTable="upgradeColumn" msprop:Generator_UserColumnName="upgrade" type="xs:int" minOccurs="0" />
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="alias" msprop:Generator_ColumnVarNameInTable="columnalias" msprop:Generator_ColumnPropNameInRow="alias" msprop:Generator_ColumnPropNameInTable="aliasColumn" msprop:Generator_UserColumnName="alias">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="months" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnmonths" msprop:Generator_ColumnPropNameInRow="months" msprop:Generator_ColumnPropNameInTable="monthsColumn" msprop:Generator_UserColumnName="months" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="372" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shortmonths" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnshortmonths" msprop:Generator_ColumnPropNameInRow="shortmonths" msprop:Generator_ColumnPropNameInTable="shortmonthsColumn" msprop:Generator_UserColumnName="shortmonths" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="132" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="days" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndays" msprop:Generator_ColumnPropNameInRow="days" msprop:Generator_ColumnPropNameInTable="daysColumn" msprop:Generator_UserColumnName="days" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="217" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lcid" msprop:Generator_ColumnVarNameInTable="columnlcid" msprop:Generator_ColumnPropNameInRow="lcid" msprop:Generator_ColumnPropNameInTable="lcidColumn" msprop:Generator_UserColumnName="lcid" type="xs:int" />
+              <xs:element name="msglangid" msprop:Generator_ColumnVarNameInTable="columnmsglangid" msprop:Generator_ColumnPropNameInRow="msglangid" msprop:Generator_ColumnPropNameInTable="msglangidColumn" msprop:Generator_UserColumnName="msglangid" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
